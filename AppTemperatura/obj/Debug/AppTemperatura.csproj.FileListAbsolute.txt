@@ -1,0 +1,16 @@
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\bin\Debug\AppTemperatura.exe.config
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\bin\Debug\AppTemperatura.exe
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\bin\Debug\AppTemperatura.pdb
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\bin\Debug\Guna.UI2.dll
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.csproj.AssemblyReference.cache
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.Formularios.FrmTemperatura.resources
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.Properties.Resources.resources
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.csproj.GenerateResource.cache
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.csproj.CoreCompileInputs.cache
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.csproj.CopyComplete
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.exe
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.pdb
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\bin\Debug\Domain.dll
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\bin\Debug\Domain.pdb
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.Formularios.FrmInformacion.resources
+C:\Users\Quezada\source\repos\AppTemperatura\AppTemperatura\obj\Debug\AppTemperatura.Formularios.FrmConversion.resources
