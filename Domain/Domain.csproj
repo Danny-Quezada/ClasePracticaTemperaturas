@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Entities\DataGridInformation.cs" />
     <Compile Include="Enums\Temperaturas.cs" />
+    <Compile Include="Interfaces\IRegistroData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

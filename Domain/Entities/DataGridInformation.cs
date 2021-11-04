@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,10 @@ namespace Domain.Entities
 {
 	public class DataGridInformation
 	{
-		public string NombreOriginal { get; set; }
-		public double GradoOriginal { get; set; }
-		public string Conversion { get; set; }
-		public double GradoConversion { get; set; }
+		public int Numero_Operacion { get; set; }
+		public Temperaturas Unidad_Medida_Original { get; set; }
+		public double Temperatura_Original { get; set; }
+		public Temperaturas Unidad_Medida_Convertida { get; set; }
+		public double Temperatura_Convertida { get; set; }
 	}
 }

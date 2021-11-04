@@ -1,4 +1,5 @@
 ﻿using AppTemperatura.Properties;
+using Infraestructure.Factory;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,9 +17,6 @@ namespace AppTemperatura.Formularios
 		private double Valor;
 		private int Temp;
 		private int TempC;
-		//Fahrenheit,
-		//Celsius,
-		//Kelvin
 		public FrmConversion(double valor, int temp,int tempC)
 		{
 
@@ -31,7 +29,6 @@ namespace AppTemperatura.Formularios
 
 		private void FrmConversion_Load(object sender, EventArgs e)
 		{
-			llbNumero.Text= $"       {Valor}º";
 			if (Temp == 0)
 			{
 				pbTemp.Image = Properties.Resources.farenheit;
@@ -56,7 +53,7 @@ namespace AppTemperatura.Formularios
 			{
 				pbTempC.Image = Properties.Resources.kelvin;
 			}
-
+			llbNumero.Text = Convert.ToString(FactoryMethod.CreateInstance(Temp).CalculateTemperature(Valor, TempC));
 		}
 
 		private void llbNumero_Click(object sender, EventArgs e)

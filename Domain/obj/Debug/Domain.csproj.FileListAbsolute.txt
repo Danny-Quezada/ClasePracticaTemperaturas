@@ -6,3 +6,11 @@ C:\Users\Quezada\source\repos\AppTemperatura\Domain\obj\Debug\Domain.csproj.Core
 C:\Users\Quezada\source\repos\AppTemperatura\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\Quezada\source\repos\AppTemperatura\Domain\obj\Debug\Domain.dll
 C:\Users\Quezada\source\repos\AppTemperatura\Domain\obj\Debug\Domain.pdb
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\bin\Debug\Domain.dll
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\bin\Debug\Domain.pdb
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\bin\Debug\Guna.UI2.dll
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\obj\Debug\Domain.dll
+C:\Users\Kevin Roa\Desktop\El bueno\ClasePracticaTemperaturas\Domain\obj\Debug\Domain.pdb

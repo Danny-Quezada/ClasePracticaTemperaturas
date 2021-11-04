@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppCore.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace AppTemperatura.Formularios
 {
 	public partial class FrmInformacion : Form
 	{
-		public FrmInformacion()
+		private IRegistroDataService registroDataService;
+		public FrmInformacion(IRegistroDataService registroDataService)
 		{
-
+			this.registroDataService = registroDataService;
 			InitializeComponent();
 		}
 
@@ -25,8 +27,8 @@ namespace AppTemperatura.Formularios
 
 		private void FrmInformacion_Load(object sender, EventArgs e)
 		{
-	
-			guna2DataGridView1.Rows.Add("Celsius", 22, "Kelvin", 333);
+
+			guna2DataGridView1.DataSource = registroDataService.FindAll();
 		}
 
 		private void pictureBox1_Click(object sender, EventArgs e)

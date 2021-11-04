@@ -1,4 +1,8 @@
-﻿using Domain.Enums;
+﻿using AppCore.Interfaces;
+using Domain.Entities;
+using Domain.Enums;
+using Infraestructure.Factory;
+using Infraestructure.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +17,11 @@ namespace AppTemperatura.Formularios
 {
 	public partial class FrmTemperatura : Form
 	{
-		public FrmTemperatura()
+		private IRegistroDataService registroData;
+		public FrmTemperatura(IRegistroDataService registroData)
 		{
+			RegistroDataRepository Inicializador = new RegistroDataRepository();
+			this.registroData = registroData;
 			InitializeComponent();
 		}
 
@@ -70,7 +77,7 @@ namespace AppTemperatura.Formularios
 
 		private void guna2ImageButton1_Click(object sender, EventArgs e)
 		{
-			FrmInformacion Informacion = new FrmInformacion();
+			FrmInformacion Informacion = new FrmInformacion(registroData);
 			Informacion.ShowDialog();
 		}
 
@@ -106,31 +113,29 @@ namespace AppTemperatura.Formularios
 
 		private void btnConvertir_Click(object sender, EventArgs e)
 		{
-
-
-			String a =
-			FrmConversion Conversion = new FrmConversion(22,2,1);
-			Conversion.ShowDialog();	
+			DataGridInformation dataGridInformation = new DataGridInformation
+			{
+				Numero_Operacion = registroData.GetLastId() + 1,
+				Unidad_Medida_Original = (Temperaturas)cmbTiposTempe.SelectedIndex,
+				Temperatura_Original = double.Parse(txtTemp.Text),
+				Unidad_Medida_Convertida = (Temperaturas)cmbConvertir.SelectedIndex,
+				Temperatura_Convertida = FactoryMethod.CreateInstance(cmbTiposTempe.SelectedIndex).CalculateTemperature(double.Parse(txtTemp.Text), cmbConvertir.SelectedIndex),
+			};
+			registroData.Add(dataGridInformation);
+			FrmConversion Conversion = new FrmConversion(double.Parse(txtTemp.Text), cmbTiposTempe.SelectedIndex, cmbConvertir.SelectedIndex);
+			Conversion.ShowDialog();
+			txtTemp.Text = "";
+			cmbTiposTempe.Text = null;
+			cmbConvertir.Text = null;
 		}
-		public string Convertidor(int i)
-		{
-			string nombre = "";
-			if (i == 0)
+
+        private void txtTemp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+		(e.KeyChar != '.'))
 			{
-				nombre = "Fahrenheit";
-				return nombre;
+				e.Handled = true;
 			}
-			else if (i == 1)
-			{
-				nombre = "Celsius";
-				return nombre;
-			}
-			else if (i == 2)
-			{
-				nombre = "Kelvin";
-					return nombre;
-			}
-			return nombre;
 		}
-	}
+    }
 }
