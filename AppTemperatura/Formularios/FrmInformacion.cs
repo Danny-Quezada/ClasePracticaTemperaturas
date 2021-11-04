@@ -14,6 +14,7 @@ namespace AppTemperatura.Formularios
 	{
 		public FrmInformacion()
 		{
+
 			InitializeComponent();
 		}
 
@@ -24,6 +25,7 @@ namespace AppTemperatura.Formularios
 
 		private void FrmInformacion_Load(object sender, EventArgs e)
 		{
+	
 			guna2DataGridView1.Rows.Add("Celsius", 22, "Kelvin", 333);
 		}
 

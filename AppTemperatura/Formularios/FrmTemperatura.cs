@@ -106,8 +106,31 @@ namespace AppTemperatura.Formularios
 
 		private void btnConvertir_Click(object sender, EventArgs e)
 		{
-			FrmConversion Conversion = new FrmConversion(0,28,1);
-			Conversion.ShowDialog();
+
+
+			String a =
+			FrmConversion Conversion = new FrmConversion(22,2,1);
+			Conversion.ShowDialog();	
+		}
+		public string Convertidor(int i)
+		{
+			string nombre = "";
+			if (i == 0)
+			{
+				nombre = "Fahrenheit";
+				return nombre;
+			}
+			else if (i == 1)
+			{
+				nombre = "Celsius";
+				return nombre;
+			}
+			else if (i == 2)
+			{
+				nombre = "Kelvin";
+					return nombre;
+			}
+			return nombre;
 		}
 	}
 }
