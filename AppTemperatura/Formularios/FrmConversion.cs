@@ -32,6 +32,7 @@ namespace AppTemperatura.Formularios
 		private void FrmConversion_Load(object sender, EventArgs e)
 		{
 			llbNumero.Text= $"       {Valor}º";
+
 			if (Temp == 0)
 			{
 				pbTemp.Image = Properties.Resources.farenheit;

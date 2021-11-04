@@ -50,7 +50,7 @@ namespace AppTemperatura.Formularios
 			// 
 			// pbTempC
 			// 
-			this.pbTempC.Location = new System.Drawing.Point(160, 43);
+			this.pbTempC.Location = new System.Drawing.Point(169, 43);
 			this.pbTempC.Name = "pbTempC";
 			this.pbTempC.Size = new System.Drawing.Size(78, 82);
 			this.pbTempC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -60,7 +60,7 @@ namespace AppTemperatura.Formularios
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(87, 43);
+			this.pictureBox2.Location = new System.Drawing.Point(95, 43);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(60, 82);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

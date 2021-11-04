@@ -108,28 +108,15 @@ namespace AppTemperatura.Formularios
 		{
 
 
-			String a =
-			FrmConversion Conversion = new FrmConversion(22,2,1);
+			string original= Convertidor(cmbTiposTempe.SelectedIndex);
+			string conversion = Convertidor(cmbConvertir.SelectedIndex);
+			FrmConversion Conversion = new FrmConversion(22,0,1);
 			Conversion.ShowDialog();	
 		}
-		public string Convertidor(int i)
+		private string Convertidor(int i)
 		{
-			string nombre = "";
-			if (i == 0)
-			{
-				nombre = "Fahrenheit";
-				return nombre;
-			}
-			else if (i == 1)
-			{
-				nombre = "Celsius";
-				return nombre;
-			}
-			else if (i == 2)
-			{
-				nombre = "Kelvin";
-					return nombre;
-			}
+			var a= (Temperaturas)i;
+			string nombre = a.ToString();
 			return nombre;
 		}
 	}
